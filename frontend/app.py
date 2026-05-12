@@ -706,7 +706,7 @@ if menu == "Prediksi Gempa":
             # REQUEST PREDIKSI RISIKO
             # ==============================
             risk_response = requests.post(
-                "http://127.0.0.1:5000/api/predict",
+                "https://skripsi-gempa-production.up.railway.app//api/predict",
                 json=payload,
                 timeout=30
             )
@@ -715,7 +715,7 @@ if menu == "Prediksi Gempa":
             # REQUEST PREDIKSI MAGNITUDE
             # ==============================
             magnitude_response = requests.post(
-                "http://127.0.0.1:5000/api/predict-magnitude",
+                "https://skripsi-gempa-production.up.railway.app//api/predict-magnitude",
                 json={
                     "depth": depth,
                     "lat": lat,
@@ -815,7 +815,7 @@ if menu == "Riwayat Prediksi":
     try:
 
         history_response = requests.get(
-            "http://127.0.0.1:5000/api/history"
+            "https://skripsi-gempa-production.up.railway.app//api/history"
         )
 
         if history_response.status_code == 200:
@@ -866,7 +866,7 @@ if menu == "Visualisasi Data":
 
     try:
         history_response = requests.get(
-            "http://127.0.0.1:5000/api/history",
+            "https://skripsi-gempa-production.up.railway.app//api/history",
             timeout=30
         )
 

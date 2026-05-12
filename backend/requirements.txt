@@ -1,9 +1,9 @@
 flask
-flask-sqlalchemy
-scikit-learn
+flask-cors
+mysql-connector-python
 pandas
+numpy<2.0.0
+scikit-learn==1.4.2
 joblib
-numpy
 gunicorn
-tensorflow-cpu
-h5py
+tensorflow-cpu==2.15.0
