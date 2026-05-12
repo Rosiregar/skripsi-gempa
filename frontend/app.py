@@ -11,7 +11,7 @@ from streamlit_option_menu import option_menu
 # =====================================
 # BACKEND API URL
 # =====================================
-BASE_URL = "http://127.0.0.1:5000/api"
+BASE_URL = "https://skripsi-gempa-production.up.railway.app"
 
 # ==============================
 # SESSION LOGIN
