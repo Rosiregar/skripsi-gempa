@@ -3,6 +3,14 @@ import joblib
 import numpy as np
 from datetime import datetime
 
+
+
+try:
+    model = joblib.load(MODEL_PATH)
+    print("Model berhasil dimuat! ✅")
+except Exception as e:
+    model = None
+    print(f"Gagal memuat model karena: {e} ❌")
 # =========================
 # LOAD MODEL (sekali saja)
 # =========================
